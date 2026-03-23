@@ -1,35 +1,39 @@
 # RTL to GDS Flow using OpenROAD
 
-## Overview
-This project explores the RTL-to-GDSII ASIC design flow using open-source tools.
+## 📌 Overview
+This project explores the complete RTL-to-GDSII ASIC design flow using open-source tools. The objective was to understand how a high-level hardware description is transformed into a physically implementable chip design.
 
-## Flow Steps
+## ⚙️ Design Description
+- Designed a simple **ALU module in Verilog**
+- Used as input for synthesis and physical design flow
+
+## 🔄 ASIC Design Flow Explored
 1. RTL Design (Verilog)
-2. Synthesis using Yosys
+2. Logic Synthesis (Yosys)
 3. Floorplanning
 4. Placement
-5. Routing
-6. Timing Analysis
+5. Clock Tree Synthesis (CTS)
+6. Routing
+7. Static Timing Analysis
 
-## Design
-A simple ALU module was designed in Verilog and used as input for synthesis.
+## 📊 Key Observations
+- RTL is converted into a **gate-level netlist** during synthesis  
+- Placement determines **cell locations** affecting timing and congestion  
+- Routing connects components while optimizing delays  
+- Timing reports highlight **critical paths and slack values**  
+- Trade-offs between **Power, Performance, and Area (PPA)** are crucial  
 
-## Observations
-- Understood how RTL is converted into a gate-level netlist
-- Explored placement and routing stages
-- Observed timing reports and slack values
-- Learned trade-offs between Power, Performance, and Area (PPA)
+## 🛠️ Tools Used
+- Yosys (Synthesis)
+- OpenROAD (Physical Design)
+- GTKWave (Waveform Analysis)
 
-## Tools Used
-- Yosys
-- OpenROAD
-- GTKWave
 
-## Key Learnings
-- Basics of ASIC design flow
-- Importance of timing closure
-- Role of physical design stages
+## 🧠 Key Learnings
+- Understanding of end-to-end ASIC design flow  
+- Importance of timing closure in digital circuits  
+- Exposure to physical design stages like placement and routing  
+- Basics of analyzing timing reports and slack  
 
-## Note
-This project focuses on learning and exploring the ASIC design flow using open-source tools.# rtl-to-gds-openroad
-Exploring RTL to GDSII ASIC design flow using OpenROAD
+## ⚠️ Note
+This project focuses on **exploration and understanding** of ASIC design flow using open-source tools, rather than full-scale chip implementation.
